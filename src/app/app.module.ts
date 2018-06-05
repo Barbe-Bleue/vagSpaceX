@@ -7,13 +7,16 @@ import { HttpClientModule } from "@angular/common/http";
 import { AppComponent } from "./app.component";
 import { AppRoutingModule } from "./modules/app-routing/app-routing.module";
 import { SharedModule } from "./modules/shared/shared.module";
+import { CompanyInfoComponent } from "./components/company-info/company-info.component";
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    CompanyInfoComponent,
   ],
-  imports: [BrowserModule, HttpClientModule, AppRoutingModule, SharedModule, MatFormFieldModule , MatInputModule, FormsModule, MatCheckboxModule],
+  imports: [BrowserModule,HttpClientModule, AppRoutingModule, SharedModule, MatFormFieldModule , MatInputModule, FormsModule, MatCheckboxModule],
   providers: [],
   bootstrap: [AppComponent]
 })
