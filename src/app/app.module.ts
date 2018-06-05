@@ -3,6 +3,10 @@ import { NgModule } from "@angular/core";
 import { MatInputModule, MatFormFieldModule } from '@angular/material';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
+import { AppComponent } from "./app.component";
+import { AppRoutingModule } from "./modules/app-routing/app-routing.module";
+import { SharedModule } from "./modules/shared/shared.module";
 
 
 @NgModule({
