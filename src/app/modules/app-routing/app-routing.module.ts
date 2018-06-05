@@ -5,6 +5,8 @@ import {RouterModule, Routes} from "@angular/router";
 import {AppComponent} from "../../app.component";
 import {CompanyInfoComponent} from "../../components/company-info/company-info.component";
 import {RocketListComponent} from "../../components/rocket-list/rocket-list.component";
+import { LaunchpadListComponent } from "../../components/launchpad-list/launchpad-list.component";
+import { LaunchpadComponent } from "../../components/launchpad/launchpad.component";
 
 const appRoutes: Routes = [
     {
@@ -14,7 +16,15 @@ const appRoutes: Routes = [
     {
         path: "rockets",
         component: RocketListComponent
-    }
+    },
+	{
+		path: "launchpads",
+		component: LaunchpadListComponent
+	},
+	{
+		path: "launchpads/:id",
+		component: LaunchpadComponent
+	}
 ];
 
 @NgModule({
