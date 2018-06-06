@@ -16,7 +16,6 @@ import {LaunchesHomeComponent} from "./components/launches-home/launches-home.co
 import {LaunchesListComponent} from "./components/launches-list/launches-list.component";
 import {CapsulesListComponent} from "./components/capsules-list/capsules-list.component";
 import {CapsuleComponent} from "./components/capsule/capsule.component";
-
 import { HugeNumberPipe } from "./pipes/hugeNumber.pipe";
 
 
