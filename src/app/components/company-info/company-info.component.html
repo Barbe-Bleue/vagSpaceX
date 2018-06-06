@@ -8,7 +8,18 @@
     <mat-card-title>{{ companyInfo.name }}</mat-card-title>
     <mat-card-subtitle>Founder: {{ companyInfo.founder }}</mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image src="https://i.ytimg.com/vi/RKWX4WG3vm8/maxresdefault.jpg" alt="Space X logo">
+    <div style="margin: 0 auto; display: flex; width: 100%;">
+        <div>
+            <img mat-card-image src="https://image.noelshack.com/fichiers/2018/23/3/1528288664-nasa.png">
+        </div>
+        <div style=" height: 50%; width: 50%;">
+            <img mat-card-image src="https://s3.amazonaws.com/ebaumsworld.prod/uploads1518049589537-CxwtAczmpyYXu5ImxnqR7x0OZkvrvKTk_TWfNpVrQ3g.jpg" alt="Space X logo">
+        </div>
+        <div>
+            <img mat-card-image src="https://image.noelshack.com/fichiers/2018/23/3/1528288664-nasa.png">
+        </div>
+    </div>
+
   <mat-card-content>
     <p>
       {{ companyInfo.summary }}
