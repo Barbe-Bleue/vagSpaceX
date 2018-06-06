@@ -14,6 +14,8 @@ import { CapsulesListComponent } from "../../components/capsules-list/capsules-l
 import { CapsuleComponent } from "../../components/capsule/capsule.component";
 import { DetailCoreComponent } from "../../components/detail-core/detail-core.component";
 import { DetailedCoreListComponent } from "../../components/detailed-core-list/detailed-core-list.component";
+import { DetailedcapsulesListComponent } from "../../components/detailedcapsules-list/detailedcapsules-list.component";
+import { DetailedcapsuleComponent } from "../../components/detailedcapsule/detailedcapsule.component";
 
 const appRoutes: Routes = [
     {
@@ -55,6 +57,14 @@ const appRoutes: Routes = [
 	{
 		path: "detailed-cores/:id",
 		component: DetailCoreComponent
+	},
+	{
+		path: "detailed-capsules",
+		component: DetailedcapsulesListComponent
+	},
+	
+		path: "detailed-capsules/:id",
+		component: DetailedcapsuleComponent
 	}
 ];
 
