@@ -9,6 +9,9 @@ import {AppRoutingModule} from "./modules/app-routing/app-routing.module";
 import {SharedModule} from "./modules/shared/shared.module";
 import {CompanyInfoComponent} from "./components/company-info/company-info.component";
 import {RocketListComponent} from "./components/rocket-list/rocket-list.component";
+import {LaunchpadListComponent} from "./components/launchpad-list/launchpad-list.component";
+import {LaunchpadComponent} from "./components/launchpad/launchpad.component";
+
 import { HugeNumberPipe } from "./pipes/hugeNumber.pipe";
 
 
@@ -17,7 +20,10 @@ import { HugeNumberPipe } from "./pipes/hugeNumber.pipe";
         AppComponent,
         CompanyInfoComponent,
         RocketListComponent,
-        HugeNumberPipe
+        HugeNumberPipe,
+        LaunchpadListComponent,
+        LaunchpadComponent
+
     ],
     imports: [BrowserModule, HttpClientModule, AppRoutingModule, SharedModule, MatFormFieldModule, MatInputModule, FormsModule, MatCheckboxModule],
     providers: [],

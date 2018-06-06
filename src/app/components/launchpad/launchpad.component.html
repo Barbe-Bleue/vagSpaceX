@@ -1,0 +1,31 @@
+<div *ngIf="isLoading" class="full-width screen-height flex-row">
+  <mat-spinner></mat-spinner>
+</div>
+
+<mat-card>
+  <mat-card-header *ngIf="!isLoading">
+    <mat-card-title>{{ launchpad.full_name }}</mat-card-title>
+    <mat-card-subtitle>Status: {{ launchpad.status }} </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-accordion *ngIf="!isLoading">
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Location
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-list>
+          <mat-list-item>
+            <strong>Name:</strong> {{ launchpad.location.name }}
+          </mat-list-item>
+          <mat-list-item>
+            <strong>Region:</strong> {{ launchpad.location.region }}
+          </mat-list-item>
+        </mat-list>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <div #gmap style="width:100%;height:400px"></div>
+    <p>{{ launchpad.details }}</p>
+  </mat-card-content>
+</mat-card>
