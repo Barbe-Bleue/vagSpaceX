@@ -23,7 +23,7 @@
   <mat-divider></mat-divider>
   <mat-grid-tile role="listitem" *ngFor="let capsule of filteredCapsules">
     <mat-card >
-      {{ capsule.capsule_serial }} | Status
+      {{ capsule.capsule_serial }}
       <mat-icon *ngIf="capsule.status == 'retired'">cancel_outline</mat-icon>
       <mat-icon *ngIf="capsule.status == 'active'">done_outline</mat-icon>
       <mat-icon *ngIf="capsule.status == 'unknown'">?</mat-icon>
