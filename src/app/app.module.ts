@@ -11,6 +11,9 @@ import {CompanyInfoComponent} from "./components/company-info/company-info.compo
 import {RocketListComponent} from "./components/rocket-list/rocket-list.component";
 import {LaunchpadListComponent} from "./components/launchpad-list/launchpad-list.component";
 import {LaunchpadComponent} from "./components/launchpad/launchpad.component";
+import {LaunchComponent} from "./components/launch/launch.component";
+import {LaunchesHomeComponent} from "./components/launches-home/launches-home.component";
+import {LaunchesListComponent} from "./components/launches-list/launches-list.component";
 
 import { HugeNumberPipe } from "./pipes/hugeNumber.pipe";
 
@@ -22,7 +25,10 @@ import { HugeNumberPipe } from "./pipes/hugeNumber.pipe";
         RocketListComponent,
         HugeNumberPipe,
         LaunchpadListComponent,
-        LaunchpadComponent
+        LaunchpadComponent,
+        LaunchComponent,
+		LaunchesHomeComponent,
+		LaunchesListComponent
 
     ],
     imports: [BrowserModule, HttpClientModule, AppRoutingModule, SharedModule, MatFormFieldModule, MatInputModule, FormsModule, MatCheckboxModule],
