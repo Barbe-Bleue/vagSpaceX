@@ -14,11 +14,8 @@ import {LaunchpadComponent} from "./components/launchpad/launchpad.component";
 import {LaunchComponent} from "./components/launch/launch.component";
 import {LaunchesHomeComponent} from "./components/launches-home/launches-home.component";
 import {LaunchesListComponent} from "./components/launches-list/launches-list.component";
-<<<<<<< HEAD
 import {CapsulesListComponent} from "./components/capsules-list/capsules-list.component";
 import {CapsuleComponent} from "./components/capsule/capsule.component";
-=======
->>>>>>> 309c61259adee1358b78aabdb6bdf7a902e2fb06
 
 import { HugeNumberPipe } from "./pipes/hugeNumber.pipe";
 
@@ -33,13 +30,9 @@ import { HugeNumberPipe } from "./pipes/hugeNumber.pipe";
         LaunchpadComponent,
         LaunchComponent,
 		LaunchesHomeComponent,
-<<<<<<< HEAD
 		LaunchesListComponent,
 		CapsulesListComponent,
 		CapsuleComponent
-=======
-		LaunchesListComponent
->>>>>>> 309c61259adee1358b78aabdb6bdf7a902e2fb06
 
     ],
     imports: [BrowserModule, HttpClientModule, AppRoutingModule, SharedModule, MatFormFieldModule, MatInputModule, FormsModule, MatCheckboxModule],
