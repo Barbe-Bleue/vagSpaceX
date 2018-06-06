@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import {NgModule} from "@angular/core";
 import {CommonModule} from "@angular/common";
 import {RouterModule, Routes} from "@angular/router";
@@ -13,6 +12,8 @@ import { LaunchesHomeComponent } from "../../components/launches-home/launches-h
 import { LaunchesListComponent } from "../../components/launches-list/launches-list.component";
 import { CapsulesListComponent } from "../../components/capsules-list/capsules-list.component";
 import { CapsuleComponent } from "../../components/capsule/capsule.component";
+import { DetailCoreComponent } from "../../components/detail-core/detail-core.component";
+import { DetailedCoreListComponent } from "../../components/detailed-core-list/detailed-core-list.component";
 
 const appRoutes: Routes = [
     {
@@ -46,6 +47,14 @@ const appRoutes: Routes = [
 	{
 		path: "capsules/:id",
 		component: CapsuleComponent
+	},
+	{
+		path: "detailed-cores",
+		component: DetailedCoreListComponent
+	},
+	{
+		path: "detailed-cores/:id",
+		component: DetailCoreComponent
 	}
 ];
 
