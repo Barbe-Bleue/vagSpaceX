@@ -15,12 +15,12 @@
           <div matLine>
               {{ launchpad.location.region }} - {{ launchpad.location.name }}
           </div>
-
-
+          
           <span>
             <mat-chip-list>
               <mat-chip *ngIf="launchpad.status == 'active'" color="primary" selected="true">{{ launchpad.status }}</mat-chip>
-              <mat-chip *ngIf="launchpad.status != 'active'" color="warn" selected="true">{{ launchpad.status }}</mat-chip>
+              <mat-chip *ngIf="launchpad.status == 'retired'" color="warn" selected="true">{{ launchpad.status }}</mat-chip>
+              <mat-chip *ngIf="launchpad.status == 'under construction'" color="accent" selected="true">{{ launchpad.status }}</mat-chip>
             </mat-chip-list>
           </span>
 
