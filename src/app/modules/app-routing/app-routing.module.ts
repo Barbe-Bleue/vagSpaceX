@@ -17,6 +17,7 @@ import { DetailedCoreListComponent } from "../../components/detailed-core-list/d
 import { DetailedcapsulesListComponent } from "../../components/detailedcapsules-list/detailedcapsules-list.component";
 import { DetailedcapsuleComponent } from "../../components/detailedcapsule/detailedcapsule.component";
 
+
 const appRoutes: Routes = [
     {
         path: "company-info",
@@ -26,46 +27,51 @@ const appRoutes: Routes = [
         path: "rockets",
         component: RocketListComponent
     },
-	{
-		path: "launchpads",
-		component: LaunchpadListComponent
-	},
-	{
-		path: "launchpads/:id",
-		component: LaunchpadComponent
-	},
-	{
-		path: "launches",
-		component: LaunchesListComponent
-	},
-	{
-		path: "launches/:id",
-		component: LaunchComponent
-	},
-	{
-		path: "capsules",
-		component: CapsulesListComponent
-	},
-	{
-		path: "capsules/:id",
-		component: CapsuleComponent
-	},
-	{
-		path: "detailed-cores",
-		component: DetailedCoreListComponent
-	},
-	{
-		path: "detailed-cores/:id",
-		component: DetailCoreComponent
-	},
-	{
-		path: "detailed-capsules",
-		component: DetailedcapsulesListComponent
-	},
-	
-		path: "detailed-capsules/:id",
-		component: DetailedcapsuleComponent
-	}
+
+    {
+        path: "launchpads",
+        component: LaunchpadListComponent
+    },
+    {
+        path: "launchpads/:id",
+        component: LaunchpadComponent
+    },
+    {
+        path: "launches",
+        component: LaunchesListComponent
+    },
+    {
+        path: "launches/:id",
+        component: LaunchComponent
+    },
+    {
+        path: "capsules",
+        component: CapsulesListComponent
+    },
+    {
+        path: "capsules/:id",
+        component: CapsuleComponent
+    },
+    {
+        path: "detailed-cores",
+        component: DetailedCoreListComponent
+    },
+    {
+        path: "detailed-cores/:id",
+        component: DetailCoreComponent
+    },
+    {
+        path: "detailed-capsules",
+        component: DetailedcapsulesListComponent
+    },
+    {
+        path: "detailed-capsules/:id",
+        component: DetailedcapsuleComponent
+    },
+    {
+        path: "",
+        component: LaunchesHomeComponent
+    },
 ];
 
 @NgModule({
