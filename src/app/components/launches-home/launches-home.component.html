@@ -2,9 +2,22 @@
   <mat-spinner></mat-spinner>
 </div>
 
-<div class="wrapper-home">
-  <h1>Prochain lancement de fusée</h1>
-  <countdown-timer
-    [end]="nextLaunches">
-  </countdown-timer>
-</div>
+<mat-card *ngIf="nextLaunches">
+  <mat-card-header>
+    <mat-card-title>
+      <h1>Prochain Lancement de fusée dans: <countdown-timer [end]="nextLaunches"></countdown-timer> </h1>
+    </mat-card-title>
+    <mat-card-subtitle>Rip future tesla dans l'espace</mat-card-subtitle>
+  </mat-card-header>
+  <div style="margin: 0 auto; display: flex; width: 100%;">
+    <div>
+      <img mat-card-image src="https://image.noelshack.com/fichiers/2018/23/3/1528288664-nasa.png">
+    </div>
+    <div style=" height: 50%; width: 50%;">
+      <img mat-card-image src="https://i.imgflip.com/18qzi7.jpg" alt="Space X logo">
+    </div>
+    <div>
+      <img mat-card-image src="https://image.noelshack.com/fichiers/2018/23/3/1528288664-nasa.png">
+    </div>
+  </div>
+</mat-card>
