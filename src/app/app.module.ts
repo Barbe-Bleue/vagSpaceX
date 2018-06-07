@@ -22,6 +22,7 @@ import { DetailedcapsulesListComponent } from "./components/detailedcapsules-lis
 import { DetailedcapsuleComponent } from "./components/detailedcapsule/detailedcapsule.component";
 
 import { HugeNumberPipe } from "./pipes/hugeNumber.pipe";
+import { CountdownTimerModule } from 'ngx-countdown-timer';
 
 
 @NgModule({
@@ -43,7 +44,7 @@ import { HugeNumberPipe } from "./pipes/hugeNumber.pipe";
 		DetailedcapsuleComponent
 
     ],
-    imports: [BrowserModule, HttpClientModule, AppRoutingModule, SharedModule, MatFormFieldModule, MatInputModule, FormsModule, MatCheckboxModule],
+    imports: [BrowserModule, HttpClientModule, AppRoutingModule, SharedModule, MatFormFieldModule, MatInputModule, FormsModule, MatCheckboxModule, CountdownTimerModule.forRoot()],
     providers: [],
     bootstrap: [AppComponent]
 })
