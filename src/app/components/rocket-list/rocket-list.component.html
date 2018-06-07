@@ -2,12 +2,12 @@
   <p *ngIf="isLoading">Fetching latest data</p>
   <mat-spinner *ngIf="isLoading"></mat-spinner>
   <div class="rocket-list-page-header full-width flex-row" [ngStyle]="{'background-image': 'url(' + currentBackground + ')'}" *ngIf="selectedRocket">
-    <div class="half-width full-height flex-column justify-content-start align-items-start">
+    <div class="half-width full-height flex-column justify-content-start align-items-end" style="margin-right:50px;">
       <h2>{{ selectedRocket.name }}</h2>
       <p>First flew on {{ selectedRocket.first_flight | date }}</p>
       <p>{{ selectedRocket.active ? 'Still active !' : 'Inactive !' }}</p>
     </div>
-    <div class="half-width full-height flex-column justify-content-start align-items-end">
+    <div class="half-width full-height flex-column justify-content-start align-items-start">
       <p>{{ selectedRocket.height.feet | hugeNumber }}<span class="rocket-unit">ft</span> high</p>
       <p>{{ selectedRocket.diameter.feet | hugeNumber }}<span class="rocket-unit">ft</span> large</p>
       <p>{{ selectedRocket.mass.lb | hugeNumber }}<span class="rocket-unit">lb</span> heavy</p>
@@ -27,7 +27,7 @@
       <p matLine class="list-item-subtitle">{{ rocket.first_flight | date }}</p>
     </mat-list-item>
   </mat-list>
-  <mat-card class="displaid-rocket full-width">
+  <mat-card class="full-width">
     <mat-card-header>
       <mat-card-subtitle>{{ selectedRocket.description }}</mat-card-subtitle>
     </mat-card-header>
