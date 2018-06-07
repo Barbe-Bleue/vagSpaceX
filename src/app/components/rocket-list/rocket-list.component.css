@@ -29,6 +29,29 @@ mat-list {
     height: auto;
     background-color: rgba(8, 8, 8, .025);
 }
+
+.half-width.full-height.flex-column.justify-content-start.align-items-end{
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.half-width.full-height.flex-column.justify-content-start.align-items-start {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+h2 {
+    background: #3f51b5;
+    color: white;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 40px;
+}
+
+.rocket-list-page-header[_ngcontent-c7] > div[_ngcontent-c7]:last-child > p[_ngcontent-c7] {
+    font-style: inherit !important;
+}
+
 mat-list-item {
     cursor: pointer;
     background-color: inherit;

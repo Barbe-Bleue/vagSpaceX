@@ -5,17 +5,18 @@ import {RouterModule, Routes} from "@angular/router";
 import {AppComponent} from "../../app.component";
 import {CompanyInfoComponent} from "../../components/company-info/company-info.component";
 import {RocketListComponent} from "../../components/rocket-list/rocket-list.component";
-import {LaunchpadListComponent} from "../../components/launchpad-list/launchpad-list.component";
-import {LaunchpadComponent} from "../../components/launchpad/launchpad.component";
-import {LaunchComponent} from "../../components/launch/launch.component";
-import {LaunchesHomeComponent} from "../../components/launches-home/launches-home.component";
-import {LaunchesListComponent} from "../../components/launches-list/launches-list.component";
-import {CapsulesListComponent} from "../../components/capsules-list/capsules-list.component";
-import {CapsuleComponent} from "../../components/capsule/capsule.component";
-import {DetailCoreComponent} from "../../components/detail-core/detail-core.component";
-import {DetailedCoreListComponent} from "../../components/detailed-core-list/detailed-core-list.component";
-import {DetailedcapsulesListComponent} from "../../components/detailedcapsules-list/detailedcapsules-list.component";
-import {DetailedcapsuleComponent} from "../../components/detailedcapsule/detailedcapsule.component";
+import { LaunchpadListComponent } from "../../components/launchpad-list/launchpad-list.component";
+import { LaunchpadComponent } from "../../components/launchpad/launchpad.component";
+import { LaunchComponent } from "../../components/launch/launch.component";
+import { LaunchesHomeComponent } from "../../components/launches-home/launches-home.component";
+import { LaunchesListComponent } from "../../components/launches-list/launches-list.component";
+import { CapsulesListComponent } from "../../components/capsules-list/capsules-list.component";
+import { CapsuleComponent } from "../../components/capsule/capsule.component";
+import { DetailCoreComponent } from "../../components/detail-core/detail-core.component";
+import { DetailedCoreListComponent } from "../../components/detailed-core-list/detailed-core-list.component";
+import { DetailedcapsulesListComponent } from "../../components/detailedcapsules-list/detailedcapsules-list.component";
+import { DetailedcapsuleComponent } from "../../components/detailedcapsule/detailedcapsule.component";
+
 
 const appRoutes: Routes = [
     {
@@ -26,6 +27,7 @@ const appRoutes: Routes = [
         path: "rockets",
         component: RocketListComponent
     },
+
     {
         path: "launchpads",
         component: LaunchpadListComponent
@@ -65,7 +67,11 @@ const appRoutes: Routes = [
     {
         path: "detailed-capsules/:id",
         component: DetailedcapsuleComponent
-    }
+    },
+    {
+        path: "",
+        component: LaunchesHomeComponent
+    },
 ];
 
 @NgModule({
