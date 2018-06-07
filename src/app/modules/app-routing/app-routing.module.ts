@@ -65,7 +65,11 @@ const appRoutes: Routes = [
     {
         path: "detailed-capsules/:id",
         component: DetailedcapsuleComponent
-    }
+    },
+    {
+        path: "",
+        component: LaunchesHomeComponent
+    },
 ];
 
 @NgModule({
