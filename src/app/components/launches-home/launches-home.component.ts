@@ -13,7 +13,7 @@ export class LaunchesHomeComponent implements OnInit {
   public upcomingLaunches: Launch[];
   public isLoading: boolean;
   public nextLaunches: any;
-
+  public laDate: any;
   constructor(private launchService: LaunchService, private router: Router) {
   }
 
@@ -22,8 +22,11 @@ export class LaunchesHomeComponent implements OnInit {
     const today = new Date();
     this.launchService.fetchLatestLaunch().subscribe((data: Launch) => {
       this.launchService.fetchUpcomingLaunches().subscribe((dataUpcoming: Launch[]) => {
+      
         this.upcomingLaunches = dataUpcoming;
-        this.nextLaunches = this.upcomingLaunches[0].launch_date_utc.replace("T", " ").replace("Z", "").replace(".000", "");
+
+        this.laDate = this.upcomingLaunches[0].launch_date_utc;
+        this.nextLaunches = this.laDate.replace("T", " ").replace("Z", "").replace(".000", "");
         this.isLoading = false;
       });
     });
