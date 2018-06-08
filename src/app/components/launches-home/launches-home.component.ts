@@ -31,4 +31,3 @@ export class LaunchesHomeComponent implements OnInit {
       });
     });
   }
-}
