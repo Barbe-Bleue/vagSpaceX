@@ -25,7 +25,7 @@ export class LaunchesHomeComponent implements OnInit {
         this.upcomingLaunches = dataUpcoming;
         this.nextLaunches = this.upcomingLaunches[0].launch_date_utc.replace("T", " ").replace("Z", "").replace(".000", "");
         this.isLoading = false;
-      }
+      });
     });
-  });
+  }
 }
