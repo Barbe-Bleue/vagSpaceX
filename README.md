@@ -8,7 +8,7 @@
 * Update your modules : `npm update`
 * Open a Power Shell Terminal then write : `ng serve -o` to start the server
 
-The project will start to the following URL : [localhost:4200](localhost:4200)
+The project will start to the following URL : [localhost:4200](http://localhost:4200)
 
 Here are the routes you can ask for :
 * `company-info` : gives you all the informations about SpaceX
